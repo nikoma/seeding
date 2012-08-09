@@ -41,7 +41,6 @@ seeding-Category-604a68a0-c3f4-012f-fcf7-482a14164364.rb
 
 Which looks basically like this:  
 
-# -*- encoding: utf-8 -*-
 Category.create!  :id => 324,  :name => 'Zoohandlungen ',  :country => 'de',  :catgroup => 'Einkaufen'  
 puts "."  
 Category.create!  :id => 288,  :name => 'Zeitungen und Zeitschriften',  :country => 'de',  :catgroup => 'Werbung & Medien'  
