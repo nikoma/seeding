@@ -57,6 +57,15 @@ Category.create!  :id => 52,  :name => 'Wohnungs- und Zimmervermittlung ',  :cou
 
 The puts "." is pretty lame I admit but it's just nice to see that there are still rows written which is indicated by all these dots. If anything, this is better than writing seeds files by hand:-) 
 
+If you need a lot of data in your seed files from different models,: I recommend to combine them via `cat` or good old copy and paste. Of course you could also iterate over a directory with multiple seed files.  
+
+Once you are satisfied with your seed files just copy them to db/seeds.rb 
+and run:
+`rake db:seed`  
+
+done!
+
+
 
 
 ## Contributing
