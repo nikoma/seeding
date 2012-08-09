@@ -16,5 +16,4 @@ Gem::Specification.new do |gem|
   gem.version       = Seeding::VERSION
   
   gem.add_runtime_dependency "uuid"
-  gem.add_runtime_dependency "mash"
 end
