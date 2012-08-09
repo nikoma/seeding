@@ -1,0 +1,3 @@
+module Seeding
+  VERSION = "0.0.1"
+end
