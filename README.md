@@ -37,8 +37,26 @@ Example:
 `1.9.3p0 :001 > Seeding::CreateSeed.new.query { Category.all(:order => "name desc", :select => "id, name, country, catgroup") }`
 
 creates:  
+seeding-Category-604a68a0-c3f4-012f-fcf7-482a14164364.rb  
 
- 
+Which looks basically like this:  
+
+# -*- encoding: utf-8 -*-
+Category.create!  :id => 324,  :name => 'Zoohandlungen ',  :country => 'de',  :catgroup => 'Einkaufen'  
+puts "."  
+Category.create!  :id => 288,  :name => 'Zeitungen und Zeitschriften',  :country => 'de',  :catgroup => 'Werbung & Medien'  
+puts "."  
+Category.create!  :id => 76,  :name => 'Zeitarbeit',  :country => 'de',  :catgroup => 'Bildung & Beruf'  
+puts "."  
+Category.create!  :id => 107,  :name => 'Zahnmedizin',  :country => 'de',  :catgroup => 'Gesundheit'  
+puts "."  
+Category.create!  :id => 229,  :name => 'Yoga ',  :country => 'de',  :catgroup => 'Beauty & Wellness'  
+puts "."  
+Category.create!  :id => 52,  :name => 'Wohnungs- und Zimmervermittlung ',  :country => 'de',  :catgroup => 'Öffentliches & Soziales'  
+
+... and so on....
+
+The puts "." is pretty lame I admit but it's just nice to see that there are still rows written which is indicated by all these dots. If anything, this is better than writing seeds files by hand:-) 
 
 
 
