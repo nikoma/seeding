@@ -22,14 +22,15 @@ module Seeding
             if v[at].class.to_s == "Fixnum"
               str << " :#{at} => #{v[at]}, "
             else
-              str << " :#{at} => '#{v[at]}', "
+              str << " :#{at} => \"#{v[at]}\", "
             end
           end
+          # todo: Clean this up
           str << "**"
           str.gsub!(", **", "")
           str << "\n"
           file.puts str
-          file.puts "puts \".\""
+          file.puts "print \".\""
         end
       end
     end
