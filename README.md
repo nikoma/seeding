@@ -29,7 +29,7 @@ Examples:
 `Seeding::CreateSeed.new.query { MyModel.where("id < 10000") }`  
 `Seeding::CreateSeed.new.query { User.where(test: true)}`
 `Seeding::CreateSeed.new.query { Category.all(:order => "name desc") }`
-`Seeding::CreateSeed.new.query { Category.all(:order => "name desc", :select => "id, name, country,") }`
+`Seeding::CreateSeed.new.query { Category.all(:order => "name desc", :select => "id, name, country") }`
 
 It then creates a file in the root directory in your application named seeding-MyModel + guid sequence to prevent accidentally overwriting
 
