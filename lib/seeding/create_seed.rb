@@ -22,7 +22,9 @@ module Seeding
             if v[at].class.to_s == "Fixnum"
               str << " :#{at} => #{v[at]}, "
             else
-              str << " :#{at} => \"#{v[at]}\", "
+              temp_string = v[at].gsub("\"", "\\\"")
+              puts temp_string
+              str << " :#{at} => \"#{temp_string}\", "
             end
           end
           # todo: Clean this up
