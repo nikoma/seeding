@@ -14,7 +14,7 @@ describe Seeding::CreateSeed, "create" do
     
   end
   
-  it "should genrate proper row values for a given model" do
+  it "should generate proper row values for a given model" do
     # step 0 : Clean up
     Dir.glob("seeding-*.rb") do |fname|
       File.delete fname
